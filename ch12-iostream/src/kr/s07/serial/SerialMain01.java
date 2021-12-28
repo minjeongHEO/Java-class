@@ -1,0 +1,31 @@
+package kr.s07.serial;
+
+import java.io.FileOutputStream; //파일만드는역할
+import java.io.IOException;
+import java.io.ObjectOutputStream; //직렬화해주는역할
+
+public class SerialMain01 {
+	public static void main(String[] args) {
+		System.out.println("======객체 직렬화 수행=====");
+		FileOutputStream fos = null;
+		ObjectOutputStream oos = null;
+		
+		//직렬화할 객체 생성
+		Customer c = new Customer("홍길동");
+		
+		//작업 수행
+		try {
+			fos = new FileOutputStream("object.ser");//또는 object.dat
+			oos = new ObjectOutputStream(fos);
+			//객체 직렬화수행
+			oos.writeObject(c);
+			
+			System.out.println("객체 직렬화가 완료되었습니다.");
+		}catch(IOException e) {
+			e.printStackTrace();
+		}finally {
+			if(oos!=null) try {oos.close();}catch(IOException e) {}
+			if(fos!=null) try {fos.close();}catch(IOException e) {}
+		}
+	}
+}

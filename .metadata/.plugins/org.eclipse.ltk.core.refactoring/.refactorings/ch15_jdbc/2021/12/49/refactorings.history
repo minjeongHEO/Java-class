@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;kr.s07.note.noteMain&apos; to &apos;NoteMain&apos;&#x0D;&#x0A;- Original project: &apos;ch15_jdbc&apos;&#x0D;&#x0A;- Original element: &apos;kr.s07.note.noteMain&apos;&#x0D;&#x0A;- Renamed element: &apos;kr.s07.note.NoteMain&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;noteMain&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;kr.s07.note{noteMain.java[noteMain" matchStrategy="1" name="NoteMain" qualified="false" references="true" similarDeclarations="false" stamp="1638427346495" textual="false" version="1.0"/>
+</session>

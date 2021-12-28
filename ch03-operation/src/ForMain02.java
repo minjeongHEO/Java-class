@@ -1,0 +1,22 @@
+public class ForMain02 {
+	public static void main(String[] args) {
+		for (int i=5; i>=1; i--) {
+			System.out.print(i+"\t");	
+		}
+		System.out.println("\n----------------");
+		
+		for(int i=0;i<=10;i+=2) {//대입연산자를 사용해서 2씩증가하게 할수 있다.
+			System.out.print(i+"\t");
+		}
+		System.out.println("\n----------------");
+		
+		for(int i=0;i<=10;i++) {
+			if(i%2==0) {
+				System.out.print(i+"\t");
+			}
+			
+		}
+		
+	}
+
+}
